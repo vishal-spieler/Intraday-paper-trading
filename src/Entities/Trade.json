@@ -1,0 +1,87 @@
+{
+  "name": "Trade",
+  "type": "object",
+  "properties": {
+    "symbol": {
+      "type": "string",
+      "enum": [
+        "NIFTY",
+        "BANKNIFTY"
+      ],
+      "description": "Trading symbol"
+    },
+    "type": {
+      "type": "string",
+      "enum": [
+        "BUY",
+        "SELL"
+      ],
+      "description": "Trade direction"
+    },
+    "entry_price": {
+      "type": "number",
+      "description": "Entry price"
+    },
+    "stop_loss": {
+      "type": "number",
+      "description": "Stop loss price"
+    },
+    "target": {
+      "type": "number",
+      "description": "Target price"
+    },
+    "exit_price": {
+      "type": "number",
+      "description": "Exit price if closed"
+    },
+    "quantity": {
+      "type": "number",
+      "description": "Number of lots/units"
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "ACTIVE",
+        "TARGET_HIT",
+        "SL_HIT",
+        "MANUAL_EXIT"
+      ],
+      "description": "Trade status"
+    },
+    "pnl": {
+      "type": "number",
+      "description": "Profit/Loss amount"
+    },
+    "pnl_percent": {
+      "type": "number",
+      "description": "P&L percentage"
+    },
+    "entry_time": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Trade entry time"
+    },
+    "exit_time": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Trade exit time"
+    },
+    "signal_reason": {
+      "type": "string",
+      "description": "Signal generation reason"
+    },
+    "trade_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Trading date"
+    }
+  },
+  "required": [
+    "symbol",
+    "type",
+    "entry_price",
+    "stop_loss",
+    "target",
+    "status"
+  ]
+}

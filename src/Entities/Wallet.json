@@ -1,0 +1,55 @@
+{
+  "name": "Wallet",
+  "type": "object",
+  "properties": {
+    "capital": {
+      "type": "number",
+      "description": "Current available capital"
+    },
+    "initial_capital": {
+      "type": "number",
+      "description": "Starting capital"
+    },
+    "total_pnl": {
+      "type": "number",
+      "description": "Total P&L"
+    },
+    "total_trades": {
+      "type": "number",
+      "description": "Total trades executed"
+    },
+    "winning_trades": {
+      "type": "number",
+      "description": "Total winning trades"
+    },
+    "losing_trades": {
+      "type": "number",
+      "description": "Total losing trades"
+    },
+    "max_drawdown": {
+      "type": "number",
+      "description": "Maximum drawdown percentage"
+    },
+    "today_trades": {
+      "type": "number",
+      "description": "Trades taken today"
+    },
+    "today_sl_hits": {
+      "type": "number",
+      "description": "Stop-loss hits today"
+    },
+    "today_pnl": {
+      "type": "number",
+      "description": "Today's P&L"
+    },
+    "last_reset_date": {
+      "type": "string",
+      "format": "date",
+      "description": "Last daily reset date"
+    }
+  },
+  "required": [
+    "capital",
+    "initial_capital"
+  ]
+}
