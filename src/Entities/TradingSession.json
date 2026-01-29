@@ -1,0 +1,51 @@
+{
+  "name": "TradingSession",
+  "type": "object",
+  "properties": {
+    "date": {
+      "type": "string",
+      "format": "date",
+      "description": "Session date"
+    },
+    "starting_capital": {
+      "type": "number",
+      "description": "Capital at session start"
+    },
+    "ending_capital": {
+      "type": "number",
+      "description": "Capital at session end"
+    },
+    "total_trades": {
+      "type": "number",
+      "description": "Total trades taken"
+    },
+    "winning_trades": {
+      "type": "number",
+      "description": "Number of winning trades"
+    },
+    "losing_trades": {
+      "type": "number",
+      "description": "Number of losing trades"
+    },
+    "gross_pnl": {
+      "type": "number",
+      "description": "Total P&L for the day"
+    },
+    "max_drawdown": {
+      "type": "number",
+      "description": "Maximum drawdown during session"
+    },
+    "sl_hits": {
+      "type": "number",
+      "description": "Number of stop-loss hits"
+    },
+    "notes": {
+      "type": "string",
+      "description": "Session notes"
+    }
+  },
+  "required": [
+    "date",
+    "starting_capital"
+  ]
+}
